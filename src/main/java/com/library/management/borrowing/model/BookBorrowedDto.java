@@ -5,6 +5,7 @@ import lombok.*;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Null;
+import java.io.Serializable;
 import java.time.OffsetDateTime;
 import java.util.Date;
 
@@ -14,7 +15,9 @@ import java.util.Date;
 @Setter
 @Builder
 
-public class BookBorrowedDto {
+public class BookBorrowedDto implements Serializable {
+
+    static final long serialVersionUID = -5815566940065181210L;
 
     private Long id;
     @NotNull

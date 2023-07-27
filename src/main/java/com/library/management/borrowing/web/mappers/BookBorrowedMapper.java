@@ -7,7 +7,7 @@ import org.mapstruct.DecoratedWith;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
 
-@Mapper(uses = {DateMapper.class, MemberMapper.class})
+@Mapper(uses = {DateMapper.class})
 @DecoratedWith(BookBorrowedMapperDecorator.class)
 public interface BookBorrowedMapper {
 

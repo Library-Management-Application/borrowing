@@ -26,9 +26,8 @@ public class BookBorrowed {
     private String title;
     private Date dateBorrowed;
 
-    @ManyToOne
-    @JoinColumn(name = "member_id", nullable = false)
-    private Member member;
+
+    private Long memberId;
 
     @Version
     private Long version;
